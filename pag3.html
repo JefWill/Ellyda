@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loveU</title>
+    <link rel="shortcut icon" href="inicio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #110000;
+            overflow: hidden;
+        }
+        .painel {
+            background-color: rgb(252, 254, 252);
+            margin: auto;
+            width: 400px;
+            height: 620px;
+            text-align: center;
+            border-radius: 20px;
+            padding-top: 10px;
+            z-index: 2;
+            perspective: 700px;
+        }
+        #pipipi{
+            position: absolute;
+            height: 30px;
+            width: 69px;
+            background-color: rgb(63, 63, 63);
+            border: 3px solid purple;
+            border-radius: 15px;
+            color: rgb(251, 251, 252);
+            margin-left: -80px;
+            cursor: pointer;
+            
+        }
+        #pipipi:hover {
+            background-color: blueviolet;
+        }
+        #popopo{
+            position: absolute;
+            height: 30px;
+            width: 69px;
+            background-color: rgb(63, 63, 63);
+            border: purple;
+            border-radius: 15px;
+            color: rgb(251, 251, 252);
+            margin-left: 10px;
+            cursor: pointer;
+            z-index: 5;
+            
+
+        }
+        #popopo:hover {
+            background-color: brown;
+        }
+    
+        #titulo {
+            text-align: center ;
+            text-orientation: center;
+        }
+        #texto {
+            text-shadow: 0px 0px 10px rgb(231, 6, 6);
+        }
+        #atras {
+            height: 400px;
+            width: 400px;
+            z-index: -1;
+            transform: rotateY(-180deg);
+            backface-visibility: hidden;
+        }
+        #gif {
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+        }
+        #frente {
+            background-image: url(icegif-1-ezgif.com-added-text.gif);
+            width: 400px;
+            height: 400px;
+            display: absolute;
+            position: absolute;
+        }
+        #frente, #atras {
+            transition: 1000ms ease-in 6500ms;
+            border-radius: 10px;
+        }
+        .painel:hover #frente {
+            transform: rotateY(180deg);
+        }
+        .painel:hover #atras {
+            transform: rotateY(0);
+        }
+        
+    </style>
+   
+<body>
+    <script>
+        function fuja() {
+    var botaoNao = document.getElementById("popopo");
+
+    var largurajanela = 800;
+    var alturajanela = 400;
+
+    var maxX = largurajanela - botaoNao.offsetWidth;
+    var maxY = alturajanela - botaoNao.offsetHeight;
+
+    var aleatorioX = Math.floor(Math.random() * maxX);
+    var aleatorioY = Math.floor(Math.random() * maxY);
+
+  
+    botaoNao.style.left = aleatorioX + "px";
+    botaoNao.style.top = aleatorioY + "px";
+}
+console.log(window.innerWidth);
+console.log(window.innerHeight);
+console.log(offsetHeight);
+console.log(offsetWidth);
+    </script>
+</head>
+    <div class="painel">
+        <h1 id="titulo"> Agora tenho uma pergunta </h1>
+        
+            <div id="frente"> 
+            </div>
+            <div id="atras">
+                <img id="gif" src="e66d0907-249f-4fdd-bee4-98ddc1cd42c1.gif" alt="cuzinhohoje?">
+            </div>
+            <h2>responda com sinceridade</h2>
+            <a href="goodending.html" target="_self"> <button id="pipipi"> SIM</button> </a>
+            <button onmouseover="fuja()" id="popopo" > nao</button>
+    
+        
+        
+    </div>
+    <div class="container">
+        <div class="bolhas">
+            <span style="--i:25" ></span>
+            <span style="--i:17"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:24"></span>
+            <span style="--i:18"></span>
+            <span style="--i:21"></span> 
+            <span style="--i:14"></span>
+            <span style="--i:11"></span>
+            <span style="--i:10"></span> 
+            <span style="--i:19"></span>
+            <span style="--i:30"></span>
+            <span style="--i:26"></span> 
+            <span style="--i:8"></span>
+            <span style="--i:31"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:25"></span>
+            <span style="--i:17"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:24"></span>
+            <span style="--i:18"></span>
+            <span style="--i:8"></span> 
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:16"></span> 
+            <span style="--i:19"></span>
+            <span style="--i:30"></span>
+            <span style="--i:22"></span> 
+            <span style="--i:8"></span>
+            <span style="--i:31"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:17"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:21"></span>
+            <span style="--i:26"></span>
+            <span style="--i:6"></span> 
+            <span style="--i:29"></span>
+            <span style="--i:19"></span>
+        </div>
+    </div>
+</body>
+</html>

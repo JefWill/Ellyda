@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fodase</title>
+    <link rel="shortcut icon" href="nao.ico" type="image/x-icon">
+    <style>
+        .img {
+            display:block
+        }
+        .div {
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        body {
+    display: flex;
+}
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bolhas 
+{
+position: absolute;
+display: flex;
+
+
+}
+
+@keyframes animar {
+    0% {
+        transform: translatey(120vh) scale(0);
+
+    }
+    100% {
+        transform: translatey(-10vh) scale(1);
+
+    }
+}
+
+.bolhas span 
+{
+    
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    animation: animar calc(150s / var(--i)) linear infinite;
+}
+
+.bolhas ::before {
+    content: "🖕";
+    font-size: 60px;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+#voltar {
+    cursor: pointer;
+}
+    </style>
+    <script src="pagina2script.js"> </script>
+</head>
+<body class="div">
+    <DIV class="div">
+        <H1>FODASEKKKK</H1>
+        <video class="img" controls autoplay = "auto">
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+         <a href="index.html" target="_self"> <BUTton id="voltar"> era brincadeira po</BUTton> </a>
+          
+    </DIV>
+    <div class="container">
+        <div class="bolhas">
+            <span style="--i:25" ></span>
+            <span style="--i:17"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:24"></span>
+            <span style="--i:18"></span>
+            <span style="--i:21"></span> 
+            <span style="--i:14"></span>
+            <span style="--i:11"></span>
+            <span style="--i:10"></span> 
+            <span style="--i:19"></span>
+            <span style="--i:30"></span>
+            <span style="--i:26"></span> 
+            <span style="--i:8"></span>
+            <span style="--i:31"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:25"></span>
+            <span style="--i:17"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:24"></span>
+            <span style="--i:18"></span>
+            <span style="--i:8"></span> 
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:16"></span> 
+            <span style="--i:19"></span>
+            <span style="--i:30"></span>
+            <span style="--i:22"></span> 
+            <span style="--i:8"></span>
+            <span style="--i:31"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:17"></span>
+            <span style="--i:12"></span> 
+            <span style="--i:21"></span>
+            <span style="--i:26"></span>
+            <span style="--i:6"></span> 
+            <span style="--i:29"></span>
+            <span style="--i:19"></span>
+            <span style="--i:16"></span> 
+            <span style="--i:13"></span>
+            <span style="--i:32"></span>
+            <span style="--i:6"></span> 
+            <span style="--i:8"></span>
+            <span style="--i:31"></span>
+            <span style="--i:12"></span> 
+        </div>
+    </div>
+</body>
+</html>
